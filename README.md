@@ -1,12 +1,12 @@
-#**MongoDB Shell Commands**
+# **MongoDB Shell Commands**
 This Repository contains basic commands of MongoDB Shell.
-#Create
+# Create
 - _show dbs_ --> Shows available DBs.
 - _use dbname_ --> To use Database/creates DB if not available.
 - _db.collectionname.insertOne({ })_ --> To insert a single record.
 - _db.collectionname.insertMany([{ }])_ --> To insert many records.
 
-#Read
+# Read
 - _db.collectionname.find()_ --> To get all records.
 - _db.collectionname.find(fieldname)_ --> To get particular record .
 - _db.collectionname.find().limit(2)_ --> To limit results.

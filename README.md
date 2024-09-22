@@ -39,7 +39,13 @@ This Repository contains basic commands of MongoDB Shell.
 # Update
 
 - _db.collectionname.updateOne({ age : 22 },{ $set : { age : 31 }})_ --> To update the record of age containing 22 to 31
-- _db.collectionname._
+- _db.collectionname.updateOne({ _id : ObjectId( '66ebc73db885306590964034' )},{ $inc : { age : 2 }})_ --> Increments the age of the record containing the id by 2.
+- _db.collectionname.updateOne({ _id : ObjectId( '66ebc73db885306590964034' )},{ $rename : { name : "Vikas" }})_ --> Renames the name of the record containing the id.
+- _db.collectionname.updateOne({ _id : ObjectId( '66ebc73db885306590964034' )},{ $push : { hobbies : "Badminton" }})_ --> Adds an extra data in the same field nearby the existing hobbies field value.
+- _db.collectionname.updateOne({ _id : ObjectId( '66ebc73db885306590964034' )},{ $pull : { hobbies : "Badminton" }})_ --> Deletes an extra data in the same field nearby the existing hobbies field value.
+- _db.collectionname.updateOne({ _id : ObjectId( '66ebc73db885306590964034' )},{ $unset : { age : "" }})_ --> Deletes a field age.
+
+
 
 
 

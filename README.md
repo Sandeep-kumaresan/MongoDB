@@ -19,5 +19,13 @@ This Repository contains basic commands of MongoDB Shell.
 - _db.collectionname.find({age:{$gte: 21}})_ --> To find ages greater than equals 21
 - _db.collectionname.find({age:{$lt: 21}})_ --> To find ages less than 21
 - _db.collectionname.find({age:{$lte: 21}})_ --> To find ages less than equals 21
+- _db.collectionname.find({age:{not:{$lte: 21}}})_ --> To find ages not less than equals 21
 - _db.collectionname.find({name:{$in: ["Abhishek","Vishwa"]}})_ --> To find records with following names
+- _db.collectionname.find({name:{$nin: ["Abhishek","Vishwa"]}})_ --> To find records not in following names
+- _db.collectionname.find({age:{$exists: true}})_ --> To find records with age existing
+- _db.collectionname.find({age:{$gte:20,$lte:30},name:"Abhishek"})_ --> To find records with age greater than 20 less than 30 and name is Abhishek.
+_db.collectionname.find({$and:[{age:21},{name:"Abhishek"}]})_ --> To find records with both parameters satisfied.
+_db.collectionname.find({$or:[{age:21},{name:"Abhishek"}]})_ --> To find records with any one parameter satisfied.
+
+
 

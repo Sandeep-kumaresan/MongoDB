@@ -1,9 +1,12 @@
-#MongoDB Shell Commands
+#**MongoDB Shell Commands**
 This Repository contains basic commands of MongoDB Shell.
+#Create
 - _show dbs_ --> Shows available DBs.
 - _use dbname_ --> To use Database/creates DB if not available.
 - _db.collectionname.insertOne({ })_ --> To insert a single record.
 - _db.collectionname.insertMany([{ }])_ --> To insert many records.
+
+#Read
 - _db.collectionname.find()_ --> To get all records.
 - _db.collectionname.find(fieldname)_ --> To get particular record .
 - _db.collectionname.find().limit(2)_ --> To limit results.
@@ -17,3 +20,4 @@ This Repository contains basic commands of MongoDB Shell.
 - _db.collectionname.find({age:{$lt: 21}})_ --> To find ages less than 21
 - _db.collectionname.find({age:{$lte: 21}})_ --> To find ages less than equals 21
 - _db.collectionname.find({name:{$in: ["Abhishek","Vishwa"]}})_ --> To find records with following names
+
